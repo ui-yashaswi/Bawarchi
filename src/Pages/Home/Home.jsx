@@ -21,6 +21,7 @@ function Home() {
         <OrderNow/>
         <KitchenSpecial/>
         <Gallery/>
+        
     </div>
   )
 }

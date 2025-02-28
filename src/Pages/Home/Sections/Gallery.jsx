@@ -5,6 +5,7 @@ import img3 from "/OrderNow/on3.jpeg";
 import img4 from "/OrderNow/on4.jpeg";
 import img5 from "/OrderNow/on5.jpeg";
 
+import tag from "/Icons/dealTag.png"
 const images = [img1, img2, img3, img4, img5, ];
 
 function Gallery() {
@@ -26,6 +27,14 @@ function Gallery() {
           </div>
         ))}
       </div>
+
+
+      <div className="flex w-full h-full py-8 mt-10 gap-6 items-center bg-[#fef8f7] justify-center flex-col">
+      <img src={tag} alt="" className="w-40" />
+
+        <h1 className="text-[#d94f3a] text-[38px] font-serif font-bold text-3xl ">On Direct Collection of Order Get 20% OFF</h1>
+      </div>
+
     </div>
   );
 }
