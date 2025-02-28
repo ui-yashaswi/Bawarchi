@@ -31,6 +31,36 @@ const data = [
     subheading: "Fresh from Kitchen",
     price: "150rs",
   },
+  {
+    img: img4,
+    heading: "Veg Biryani",
+    subheading: "Fresh from Kitchen",
+    price: "150rs",
+  },
+  {
+    img: img2,
+    heading: "Mutton Biryani",
+    subheading: "Fresh from Kitchen",
+    price: "250rs",
+  },
+  {
+    img: img3,
+    heading: "Paneer Biryani",
+    subheading: "Fresh from Kitchen",
+    price: "180rs",
+  },
+  {
+    img: img4,
+    heading: "Veg Biryani",
+    subheading: "Fresh from Kitchen",
+    price: "150rs",
+  },
+  {
+    img: img4,
+    heading: "Veg Biryani",
+    subheading: "Fresh from Kitchen",
+    price: "150rs",
+  },
 ];
 
 function OrderNow() {
@@ -61,11 +91,11 @@ function OrderNow() {
       {/* Menu Cards */}
       <div className="px-10 flex flex-wrap gap-6 justify-center">
         {data.map((item, index) => (
-          <div key={index} className="flex items-center gap-4 p-4 border rounded-lg shadow-md bg-white">
-            <img src={item.img} alt={item.heading} className="w-40 h-40 rounded-md object-cover" />
+          <div key={index} className="flex items-center gap-4 p-4 border border-zinc-200 rounded-lg  bg-white">
+            <img src={item.img} alt={item.heading} className="w-40   h-40 rounded-md object-cover" />
 
             <div className="flex flex-col gap-2">
-              <div className="flex justify-between items-center w-full">
+              <div className="flex justify-between items-center  w-full">
                 <div>
                   <h1 className="text-lg font-semibold">{item.heading}</h1>
                   <h1 className="text-green-500">{item.subheading}</h1>
@@ -77,7 +107,7 @@ function OrderNow() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-28">
                 <QuantityCard
                   index={index}
                   quantities={quantities}

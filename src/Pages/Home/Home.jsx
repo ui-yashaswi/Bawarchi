@@ -6,7 +6,8 @@ import ReserveTable from './Sections/Form'
 import OurMenu from './Sections/OurMenu'
 import KitchenSpecial from './Sections/KitchenSpecial'
 import Events from './Sections/Events'
-// import OrderNow from './Sections/OrderNow'
+import OrderNow from './Sections/OrderNow'
+import Gallery from './Sections/Gallery'
 
 function Home() {
   return (
@@ -17,8 +18,9 @@ function Home() {
         <ReserveTable/>
         <OurMenu/>
         <Events/>
-        {/* <OrderNow/> */}
+        <OrderNow/>
         <KitchenSpecial/>
+        <Gallery/>
     </div>
   )
 }
