@@ -8,6 +8,7 @@ import KitchenSpecial from './Sections/KitchenSpecial'
 import Events from './Sections/Events'
 import OrderNow from './Sections/OrderNow'
 import Gallery from './Sections/Gallery'
+import Partners from './Sections/Partners'
 
 function Home() {
   return (
@@ -21,6 +22,8 @@ function Home() {
         <OrderNow/>
         <KitchenSpecial/>
         <Gallery/>
+        <Partners/>
+        
         
     </div>
   )

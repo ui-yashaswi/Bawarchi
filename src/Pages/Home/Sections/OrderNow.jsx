@@ -77,7 +77,7 @@ function OrderNow() {
   };
 
   return (
-    <div className="w-full h-full bg-[#fdf8f7] flex flex-col gap-6 p-6">
+    <div className="w-full h-full  px-28 flex flex-col gap-6 p-6">
       {/* Heading */}
       <div className="flex flex-col items-center">
         <h2 className="text-[#d94f3a] text-[38px] font-[quattrocento] text-center font-bold">
@@ -89,13 +89,13 @@ function OrderNow() {
       </div>
 
       {/* Menu Cards */}
-      <div className="px-10 flex flex-wrap gap-6 justify-center">
+      <div className=" flex flex-wrap gap-6 justify-center">
         {data.map((item, index) => (
-          <div key={index} className="flex items-center gap-4 p-4 border border-zinc-200 rounded-lg  bg-white">
-            <img src={item.img} alt={item.heading} className="w-40   h-40 rounded-md object-cover" />
+          <div key={index} className="flex gap-4 p-4 border border-zinc-200 rounded-lg lg:w-[26vw]  min-w-96   bg-white">
+            <img src={item.img} alt={item.heading} className="w-[138px]  h-[138px] rounded-md object-cover" />
 
-            <div className="flex flex-col gap-2">
-              <div className="flex justify-between items-center  w-full">
+            <div className="flex flex-col gap-4">
+              <div className="flex justify-between items-center gap-16  w-full">
                 <div>
                   <h1 className="text-lg font-semibold">{item.heading}</h1>
                   <h1 className="text-green-500">{item.subheading}</h1>
@@ -107,7 +107,7 @@ function OrderNow() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-28">
+              <div className="flex items-center justify-between">
                 <QuantityCard
                   index={index}
                   quantities={quantities}
